@@ -16,11 +16,12 @@ public class Airport {
         return hangar;
     }
 
-    public void addFlight(Flight flight) {
-        flights.add(flight);
-    }
-
     public ArrayList<Flight> getFlights() {
         return flights;
+    }
+
+    public void createFlight(Plane plane, int flightNumber, Destinations destination) {
+        Flight newFlight = new Flight(plane, flightNumber, destination);
+        flights.add(newFlight);
     }
 }

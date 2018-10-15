@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import sun.security.krb5.internal.crypto.Des;
 
 import static org.junit.Assert.assertEquals;
 
@@ -35,10 +36,13 @@ public class AirportTest {
     }
 
     @Test
-    public void addFlight() {
-        airport.addFlight(flight1);
+    public void createFlight() {
+        airport.createFlight(plane3, 56, Destinations.TAIPEI);
         assertEquals(1, airport.getFlights().size());
     }
 
-    
+//    @Test
+//    public void assignPlaneToFlight() {
+//
+//    }
 }
