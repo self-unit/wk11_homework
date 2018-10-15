@@ -28,6 +28,6 @@ public class FlightTest {
 
     @Test
     public void hasNumber() {
-
+        assertEquals(37, flight.getNumber());
     }
 }
