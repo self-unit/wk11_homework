@@ -11,9 +11,9 @@ public class FlightTest {
 
     @Before
     public void before() {
-        flight = new Flight(plane, 37, Destinations.BERLIN);
-        passenger = new Passenger("Steve");
         plane = new Plane(PlaneType.BOEING737, Airline.CATHAY_PACIFIC);
+        passenger = new Passenger("Steve");
+        flight = new Flight(plane, 37, Destinations.BERLIN);
     }
 
     @Test
@@ -23,7 +23,7 @@ public class FlightTest {
 
     @Test
     public void hasDestination() {
-
+        assertEquals(Destinations.BERLIN, flight.getDestination());
     }
 
     @Test
