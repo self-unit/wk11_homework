@@ -24,4 +24,11 @@ public class Airport {
         Flight newFlight = new Flight(plane, flightNumber, destination);
         flights.add(newFlight);
     }
+
+    public void assignPlaneToFlight(Plane plane, Flight flight) {
+    }
+
+    public void addFlightToHangar(Flight flight) {
+        flights.add(flight);
+    }
 }
