@@ -34,5 +34,11 @@ public class AirportTest {
         assertEquals(0, airport.getHangarPlanes().size());
     }
 
+    @Test
+    public void addFlight() {
+        airport.addFlight(flight1);
+        assertEquals(1, airport.getFlights().size());
+    }
+
     
 }

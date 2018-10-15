@@ -15,4 +15,12 @@ public class Airport {
     public ArrayList<Plane> getHangarPlanes() {
         return hangar;
     }
+
+    public void addFlight(Flight flight) {
+        flights.add(flight);
+    }
+
+    public ArrayList<Flight> getFlights() {
+        return flights;
+    }
 }
